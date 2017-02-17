@@ -1,7 +1,7 @@
 { stdenv, fetchurl, bzip2, gfortran, libX11, libXmu, libXt, libjpeg, libpng
 , libtiff, ncurses, pango, pcre, perl, readline, tcl, texLive, tk, xz, zlib
 , less, texinfo, graphviz, icu, pkgconfig, bison, imake, which, jdk, openblas
-, curl, Cocoa, Foundation, cf-private, libobjc, tzdata
+, curl, Cocoa, Foundation, cf-private, libobjc, tzdata, cairo
 , withRecommendedPackages ? true
 , enableStrictBarrier ? false
 }:
@@ -14,7 +14,7 @@ stdenv.mkDerivation rec {
     sha256 = "0k2i9qdd83g09fcpls2198q4ykxkii5skczb514gnx7mx4hsv56j";
   };
 
-  buildInputs = [ bzip2 gfortran libX11 libXmu libXt
+  buildInputs = [ bzip2 cairo gfortran libX11 libXmu libXt
     libXt libjpeg libpng libtiff ncurses pango pcre perl readline
     texLive xz zlib less texinfo graphviz icu pkgconfig bison imake
     which jdk openblas curl ]
