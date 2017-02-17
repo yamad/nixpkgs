@@ -268,6 +268,7 @@ let
     gsl = [ pkgs.gsl_1 ];
     h5 = [ pkgs.hdf5-cpp pkgs.which ];
     h5vc = [ pkgs.zlib.dev ];
+    haven = [ pkgs.libiconv ];
     HiCseg = [ pkgs.gsl_1 ];
     iBMQ = [ pkgs.gsl_1 ];
     igraph = [ pkgs.gmp ];
@@ -333,6 +334,7 @@ let
     RSclient = [ pkgs.openssl.dev ];
     Rserve = [ pkgs.openssl ];
     Rssa = [ pkgs.fftw.dev ];
+    readxl = [ pkgs.libiconv ];
     rtfbs = [ pkgs.zlib pkgs.pcre.dev pkgs.bzip2 pkgs.gzip pkgs.readline ];
     rtiff = [ pkgs.libtiff.dev ];
     runjags = [ pkgs.jags ];
