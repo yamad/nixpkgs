@@ -66,6 +66,7 @@ stdenv.mkDerivation rec {
   '';
 
   installTargets = [ "install" "install-info" "install-pdf" ];
+  outputs = [ "bin" "info" "doc" "out" ];
 
   # Tests seem to be broken upstream as of 3.3.0.
   doCheck = false;
